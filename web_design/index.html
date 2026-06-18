@@ -4,10 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criação do Primeiro site</title>
+
+    <style>
+  body {
+    text-align: center; /* Centraliza todo o texto e elementos como imagens */
+    max-width: 800px;   /* Limita a largura máxima do site */
+    margin: 0 auto;     /* Garante que o bloco inteiro fique no meio da tela */
+    font-family: Arial, sans-serif; /* Dica extra: deixa a fonte mais bonita! */
+  }
+
+  /* Adicione esta parte abaixo para corrigir as listas */
+  ul, ol {
+    display: inline-block; /* Transforma a lista num bloco que obedece o centro */
+    text-align: left;      /* Mantém o texto alinhado com as bolinhas/números */
+  } /* <-- AQUI: Faltava essa chave para fechar a regra da lista! */
+
+  table {
+    margin: 0 auto;    /* Centraliza a tabela na página */
+    text-align: left;  /* Alinha o texto das colunas à esquerda */
+  }
+</style>
+
 </head>
 <body>
 
-    <img src ="/web_design/img/natan.png" alt style =" width:25%;" alt = "uma pessoa andando na praita"> 
+
+    <img src ="/web_design/img/natan.png" alt style =" width:15%;" 
+    alt = "uma pessoa andando na praita"> 
 
     <!--O (img) serve para colocar imagens no html, mas tem que ta na pasto img dentro da pasta do index.html-->
     <!--O alt style serve com o comando em "width: 50%:" para modificar o tamanho da imagem no site-->
@@ -32,10 +55,30 @@
             <li>Aprender algo novo</li>
         </ol>
 
+    <h2>Experiencias</h2>
+        <table> <!--(table)Representa dados tabulares/tabela bidimensional composto por linha e coluna-->
+            <thead> <!--(thead)encapsula um conjunto de linhas de tabela-->
+                <tr> <!-- (tr)Define uma célula de uma tabela que contém dados-->
+                    <th>Datas</th> <!--(th) define uma célula cabeçalho do grupo grupos de células de sua tabela-->
+                    <th>Experiencia</th>
+                </tr>
+            </thead>
+            <tbody> <!--Encapsula um conjuto de linhas de tabela, indicando que elas compõem o corpo dos dados(principal)-->
+                <tr>
+                    <td>2024 a 2026</td> <!--define uma célula de uma tabela que contém dados e pode ser usado como filho do elemento-->
+                    <td>Graduando em Ciencia da computação</td>
+                </tr>
+                <tr>
+                    <td>2025/1 a 2025/2</td>
+                    <td>Curso de back-end da softex(atual aponti)</td>
+                </tr>
+            </tbody>
+        </table>
+        
     <a href="https://www.linkedin.com/in/natan-malta-080643299/" target ="_blank">Linkedin</a>  <!--A tag (a) serve para ancorar um site-->
    <!--E o (target = "_blanck") serve para abrir o site em outra aba, vez de abrir no proprio siter-->
-
-   <h1><a href="/web_design/contato/contato.html" target="_blank"> Entre em contato</a></h1>
+        <br>
+   <a href="/web_design/contato/contato.html" target="_blank"> Entre em contato</a>
 
 
 </body>
